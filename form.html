@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Patient Registration Form</title>
+
+ <style>
+ body {
+  font-family:Arial, sans-serif
+background-color:#f2f2f2;
+margin:30px
+}
+
+h1{
+text-align:centre;
+color:#333;
+
+}
+
+table{
+border-collapse: collapse;
+background-color: white;
+}
+
+th, td{
+border: 1px solid #555;
+padding: 12px;
+text-align: left;
+}
+
+th{
+background-color: #ddd;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="number"]{
+
+width: 95%;
+padding: 8px;
+border: 1px solid #999;
+border-radius: 4px
+}
+
+textarea{
+width:95%;
+height: 60px;
+padding: 8px;
+}
+
+.buttons{
+text-align: centre;
+margin-top: 20px
+}
+
+button{
+padding: 10px 25px;
+margin: 5px;
+cursor: pointer;
+}
+
+.submit{
+background-color: green;
+color: white;
+border: none;
+}
+
+.reset{
+background-color: red;
+color: white;
+border: none;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Patient Registration Form</h1>
+
+<form>
+
+<table>
+
+<tr>
+<th>Patient Information</th>
+<th>Details</th>
+</tr>
+
+<tr>
+<td>Patient ID</td>
+<td>
+<input type ="text" name="patient_id" placeholder= "Enter Patient ID">
+</td>
+</tr>
+
+<tr>
+<td>Age</td>
+<td>
+<input type="number" name="age" placeholder="Enter age">
+</td>
+</tr>
+
+<tr>
+<td>Date of Birth</td>
+<td>
+<input type="date" name="dob">
+</td>
+</tr>
+
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" name="gender" value="Male">
+Male
+
+<input type="radio" name="gender" value="Female">
+Female
+
+<input type="radio" name="gender" value="Other">
+Other
+</td>
+</tr>
+
+<tr>
+<td>Phone Number</td>
+<td>
+<input type="tel" name="phone" placeholder="Enter phone number">
+</td>
+</tr>
+
+<tr>
+<td>Adress</td>
+<td>
+
+<textarea name="address" placeholder="Enter Patient's address"></textarea>
+</td>
+</tr>
+
+<tr>
+<td>Health Status</td>
+<td>
+<input type="checkbox" name="health" value="Healthy">
+Healthy
+
+<input type="checkbox" name="health" value="Disability">
+Disability
+
+<input type="checkbox" name="health" value="Chronic">
+Chronic Condition
+
+</td>
+</tr>
+
+<tr>
+
+<td>Marital Status</td>
+<td>
+<input type="radio"  name="marital_status" value="single">
+Single
+
+<input type="radio" name="marital_status" value="married">
+Married
